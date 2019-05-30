@@ -1,0 +1,62 @@
+{
+  "name": "@connected-react-router-akita/core",
+  "version": "1.0.0",
+  "description": "A core package for managing React Router state in Akita Store.",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "./index.d.ts",
+  "sideEffects": false,
+  "author": "Qadir Husainee",
+  "license": "MIT",
+  "files": [
+    "*.md",
+    "*.js",
+    "*.ts",
+    "esm",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build:esm": "BABEL_ENV=esm babel src --out-dir esm",
+    "build:commonjs": "BABEL_ENV=commonjs babel src --out-dir lib",
+    "build:umd": "NODE_ENV=development webpack src/index.js umd/ConnectedReactRouter.js",
+    "build:umd:min": "NODE_ENV=production webpack -p src/index.js umd/ConnectedReactRouter.min.js",
+    "build": "npm run build:esm & npm run build:commonjs & npm run build:umd & npm run build:umd:min"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "@datorama/akita": "^3.11.1",
+    "history": "^4.9.0",
+    "rxjs": "^6.5.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "@types/history": "^4.5.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-rewire": "^1.2.0",
+    "babel-preset-minify": "^0.5.0",
+    "babel-template": "^6.2.0",
+    "babel-types": "^6.2.0",
+    "eslint": "^5.9.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^24.3.1",
+    "rewire": "^2.5.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "@datorama/akita": "^3.11.1",
+    "history": "^4.9.0",
+    "rxjs": "^6.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qadirhusainee/connected-react-router-akita.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qadirhusainee/connected-react-router-akita/issues"
+  }
+}
