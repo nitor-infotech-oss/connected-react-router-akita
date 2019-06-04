@@ -1,12 +1,10 @@
-import { RouterStore } from './router.store';
-
+import { RouterRootStore } from './router.store';
+import { IRouterState } from "./router.state"
 export class RouterService {
-  constructor(private store: RouterStore) { }
+  constructor(private store: RouterRootStore) { }
 
-  public updateLocation = (params: any) => {
-    this.store.update(() => ({
-      ...params,
-    }));
+  public updateLocation = (params: IRouterState) => {
+    this.store.update(() => params);
   };
 
 }

@@ -8,12 +8,10 @@ import {
   Location,
 } from 'history';
 
-import { RouterService, RouterQuery } from '@connected-react-router-akita/core';
+import { routerStore } from '@connected-react-router-akita/core';
 
 export interface IConnectedRouterProps {
   history: History;
-  routerQuery: RouterQuery;
-  routerService: RouterService;
   children: ReactChild;
 }
 
@@ -32,7 +30,10 @@ export class ConnectedRouter extends Component<IConnectedRouterProps, {}> {
     super(props);
     let inTimeTravelling = false;
 
-    const { history, routerService, routerQuery } = props;
+    const { history } = props;
+
+    const routerService = routerStore.getService();
+    const routerQuery = routerStore.getQuery();
 
     const handleLocationChange = (location: Location, action: Action) => {
       if (!inTimeTravelling) {

@@ -17,8 +17,8 @@
     "umd"
   ],
   "scripts": {
-    "build:esm": "BABEL_ENV=esm babel src --out-dir esm",
-    "build:commonjs": "BABEL_ENV=commonjs babel src --out-dir lib",
+    "build:esm": "SET BABEL_ENV=esm && babel src --out-dir esm",
+    "build:commonjs": "SET BABEL_ENV=commonjs && babel src --out-dir lib",
     "build:umd": "NODE_ENV=development webpack src/index.js umd/ConnectedReactRouter.js",
     "build:umd:min": "NODE_ENV=production webpack -p src/index.js umd/ConnectedReactRouter.min.js",
     "build": "npm run build:esm & npm run build:commonjs & npm run build:umd & npm run build:umd:min"
