@@ -33,7 +33,7 @@ In main index file
 - Wrap your react-router v4/v5 routing with  `ConnectedRouter`  and pass the  `history`  object as a prop. Remember to delete any usage of  `BrowserRouter`  or  `NativeRouter`  as leaving this in will  [cause](https://github.com/supasate/connected-react-router/issues/230#issuecomment-461628073)  [problems](https://github.com/supasate/connected-react-router/issues/230#issuecomment-476164384)  synchronising the state.
 
 		import { createBrowserHistory } from 'history';
-		import { ConnectedRouter} from  '@connected-react-router-akita/component'; // if use class based component
+		import { ConnectedRouter} from  '@connected-react-router-akita/component'; // if you want to use class based component
 		import { ConnectedRouter} from  '@connected-react-router-akita/hook-component' // when you want to use functional component based on React hooks
 		import { routerStore } from  '@connected-react-router-akita/core';
 
@@ -61,10 +61,10 @@ In main index file
 
   If you want to manually update or subscribe to router state then core package provides methods for it.
 
-  - ** getLocation()**:
+  - **getLocation()**:
 
     	import { routerStore } from '@connected-react-router-akita/core';
-   	 class App extends Component {
+		class App extends Component {
     		constructor() {
     			const routerQuery = routerStore.getQuery(); // Do not call outside class or functional component;
     			this.unSubscribeLocation = routerQuery.getLocation().subscribe(location => {
@@ -73,7 +73,7 @@ In main index file
     		}
     	}
 
-- ** updateLocation()**:
+- **updateLocation()**:
 
     	import { routerStore } from '@connected-react-router-akita/core';
     	
