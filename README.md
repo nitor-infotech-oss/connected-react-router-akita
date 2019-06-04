@@ -24,7 +24,7 @@ If you want to use old school class based component you can install:
 
 _____
 
-** 1. Usage will be similar for both `@connected-react-router-akita/component` and `@connected-react-router-akita/hook-component`**
+**1. Usage will be similar for both `@connected-react-router-akita/component` and `@connected-react-router-akita/hook-component`**
 
 In main index file
 
