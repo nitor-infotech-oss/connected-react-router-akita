@@ -6,7 +6,7 @@ This is a mono repo which has 3 packages.
 
 1. [**@connected-react-router-akita/core**](https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/core) - A core Package which create a router store and has logic to update and fetch state data.
 2. [**@connected-react-router-akita/component**](https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/component) -  A Package that provides a HOC Class component which listents to history and update in Akita store. It uses internally uses [core](https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/core) package.
-3. [**@connected-react-router-akita/hook-component**](https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/hook-component) - It provides a HOC Functional component which uses React Hooks. It listens to history and update in Akita store. It  internally uses core[core](https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/core) packages methods.
+3. [**@connected-react-router-akita/hook-component**](https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/hook-component) - It provides a HOC Functional component which uses React Hooks. It listens to history and update in Akita store. It  internally uses [core](https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/core) packages methods.
 
 ### Installation
 
