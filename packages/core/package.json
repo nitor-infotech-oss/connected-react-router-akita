@@ -56,12 +56,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qadirhusainee/connected-react-router-akita.git"
+    "url": "git+https://github.com/nitor-infotech-oss/connected-react-router-akita.git"
   },
   "bugs": {
-    "url": "https://github.com/qadirhusainee/connected-react-router-akita/issues"
+    "url": "https://github.com/nitor-infotech-oss/connected-react-router-akita/issues"
   },
-  "homepage": "https://github.com/qadirhusainee/connected-react-router-akita#readme",
+  "homepage": "https://github.com/nitor-infotech-oss/connected-react-router-akita#readme",
   "directories": {
     "lib": "lib"
   },
