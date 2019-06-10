@@ -69,7 +69,7 @@
   "bugs": {
     "url": "https://github.com/nitor-infotech-oss/connected-react-router-akita/issues"
   },
-  "homepage": "https://github.com/nitor-infotech-oss/connected-react-router-akita#readme",
+  "homepage": "https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/hook-component#readme",
   "directories": {
     "lib": "lib"
   },
