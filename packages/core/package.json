@@ -1,6 +1,6 @@
 {
   "name": "@nitor-infotech/connected-akita-router-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A core package for managing React Router state in Akita Store.",
   "main": "lib/index.js",
   "module": "esm/index.js",

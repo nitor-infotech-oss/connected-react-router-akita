@@ -1,6 +1,6 @@
 {
   "name": "@nitor-infotech/connected-akita-router-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Package provides a wrapper class based Component which listens to history and update in Akita store",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -24,7 +24,7 @@
     "build": "npm run build:esm & npm run build:commonjs & npm run build:umd & npm run build:umd:min"
   },
   "dependencies": {
-    "@nitor-infotech/connected-akita-router-core": "^1.0.0"
+    "@nitor-infotech/connected-akita-router-core": "^1.0.1"
   },
   "peerDependencies": {
     "history": "^4.9.0",
