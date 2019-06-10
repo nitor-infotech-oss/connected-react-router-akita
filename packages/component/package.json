@@ -1,5 +1,5 @@
 {
-  "name": "@connected-react-router-akita/component",
+  "name": "@nitor-infotech/connected-akita-router-component",
   "version": "1.0.0",
   "description": "Package provides a wrapper class based Component which listens to history and update in Akita store",
   "main": "lib/index.js",
@@ -24,7 +24,7 @@
     "build": "npm run build:esm & npm run build:commonjs & npm run build:umd & npm run build:umd:min"
   },
   "dependencies": {
-    "@connected-react-router-akita/core":"^1.0.0"
+    "@nitor-infotech/connected-akita-router-core": "^1.0.0"
   },
   "peerDependencies": {
     "history": "^4.9.0",
@@ -67,9 +67,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/qadirhusainee/connected-react-router-akita.git"
+    "url": "git+https://github.com/qadirhusainee/connected-react-router-akita.git"
   },
   "bugs": {
     "url": "https://github.com/qadirhusainee/connected-react-router-akita/issues"
+  },
+  "homepage": "https://github.com/qadirhusainee/connected-react-router-akita#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "react",
+    "akita",
+    "js",
+    "es2016"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -4,27 +4,27 @@
 
 This is a mono repo which has 3 packages.
 
-1. [**@connected-react-router-akita/core**](https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/core) - A core Package which create a router store and has logic to update and fetch state data.
-2. [**@connected-react-router-akita/component**](https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/component) -  A Package that provides a HOC Class component which listents to history and update in Akita store. It uses internally uses [core](https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/core) package.
-3. [**@connected-react-router-akita/hook-component**](https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/hook-component) - It provides a HOC Functional component which uses React Hooks. It listens to history and update in Akita store. It  internally uses [core](https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/core) packages methods.
+1. [**@nitor-infotech/connected-akita-router-core**](https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/core) - A core Package which create a router store and has logic to update and fetch state data.
+2. [**@nitor-infotech/connected-akita-routercomponent**](https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/component) -  A Package that provides a HOC Class component which listents to history and update in Akita store. It uses internally uses [core](https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/core) package.
+3. [**@nitor-infotech/connected-akita-router-fn-component**](https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/hook-component) - It provides a HOC Functional component which uses React Hooks. It listens to history and update in Akita store. It  internally uses [core](https://github.com/nitor-infotech-oss/connected-react-router-akita/tree/master/packages/core) packages methods.
 
 ### Installation
 
 _____
 If you want to use old school class based component you can install:
 
-    npm install --save @connected-react-router-akita/component
+    npm install --save @nitor-infotech/connected-akita-router-component
 
   or
   If you want to use React Hook version. It requires **React 16.8 or later**
   
-    npm install --save @connected-react-router-akita/hook-component
+    npm install --save @nitor-infotech/connected-akita-router-fn-component
 
 ### Usage
 
 _____
 
-**1. Usage will be similar for both `@connected-react-router-akita/component` and `@connected-react-router-akita/hook-component`**
+**1. Usage will be similar for both `@nitor-infotech/connected-akita-router-component` and `@nitor-infotech/connected-akita-router-fn-component`**
 
 In main index file
 
@@ -33,9 +33,9 @@ In main index file
 - Wrap your react-router v4/v5 routing with  `ConnectedRouter`  and pass the  `history`  object as a prop. Remember to delete any usage of  `BrowserRouter`  or  `NativeRouter`  as leaving this in will  [cause](https://github.com/supasate/connected-react-router/issues/230#issuecomment-461628073)  [problems](https://github.com/supasate/connected-react-router/issues/230#issuecomment-476164384)  synchronising the state.
 
 		import { createBrowserHistory } from 'history';
-		import { ConnectedRouter} from  '@connected-react-router-akita/component'; // if you want to use class based component
-		import { ConnectedRouter} from  '@connected-react-router-akita/hook-component' // when you want to use functional component based on React hooks
-		import { routerStore } from  '@connected-react-router-akita/core';
+		import { ConnectedRouter} from  '@nitor-infotech/connected-akita-router-component'; // if you want to use class based component
+		import { ConnectedRouter} from  '@nitor-infotech/connected-akita-router-fn-component' // when you want to use functional component based on React hooks
+		import { routerStore } from  '@nitor-infotech/connected-akita-router-core';
 
 		const  history  =  createBrowserHistory();
 
@@ -63,7 +63,7 @@ In main index file
 
   - **getLocation()**:
 
-    	import { routerStore } from '@connected-react-router-akita/core';
+    	import { routerStore } from '@nitor-infotech/connected-akita-router-core';
 		class App extends Component {
     		constructor() {
     			const routerQuery = routerStore.getQuery(); // Do not call outside class or functional component;
@@ -75,7 +75,7 @@ In main index file
 
 - **updateLocation()**:
 
-    	import { routerStore } from '@connected-react-router-akita/core';
+    	import { routerStore } from '@nitor-infotech/connected-akita-router-core';
     	
 		const location = {
         pathname: "Some Pathname";

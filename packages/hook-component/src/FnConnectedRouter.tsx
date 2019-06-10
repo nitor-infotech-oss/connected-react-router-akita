@@ -7,7 +7,7 @@ import {
   Location,
 } from 'history';
 
-import { routerStore } from '@connected-react-router-akita/core';
+import { routerStore } from '@nitor-infotech/connected-akita-router-core';
 
 export interface IConnectedRouterProps {
   history: History;

@@ -1,5 +1,5 @@
 
-declare module '@connected-react-router-akita/core' {
+declare module '@nitor-infotech/connected-akita-router-core' {
   import { Subscription } from "rxjs";
   import { Store, Query } from '@datorama/akita';
   import { History, Location, Action } from 'history';

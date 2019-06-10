@@ -1,5 +1,5 @@
 
-declare module '@connected-react-router-akita/hook-component' {
+declare module '@nitor-infotech/connected-akita-router-fn-component' {
   import { History } from "history";
   import { ReactChild } from "react";
   interface IConnectedRouterProps {

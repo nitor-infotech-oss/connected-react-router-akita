@@ -1,5 +1,5 @@
 
-declare module '@connected-react-router-akita/component' {
+declare module '@nitor-infotech/connected-akita-router-component' {
   import * as React from 'react';
   import { ReactChild, Component } from 'react';
   import { Subscription } from "rxjs";

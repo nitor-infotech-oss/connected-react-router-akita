@@ -1,5 +1,5 @@
 {
-  "name": "@connected-react-router-akita/core",
+  "name": "@nitor-infotech/connected-akita-router-core",
   "version": "1.0.0",
   "description": "A core package for managing React Router state in Akita Store.",
   "main": "lib/index.js",
@@ -56,9 +56,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/qadirhusainee/connected-react-router-akita.git"
+    "url": "git+https://github.com/qadirhusainee/connected-react-router-akita.git"
   },
   "bugs": {
     "url": "https://github.com/qadirhusainee/connected-react-router-akita/issues"
+  },
+  "homepage": "https://github.com/qadirhusainee/connected-react-router-akita#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "react",
+    "js",
+    "es2016",
+    "react-router",
+    "akita"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }
