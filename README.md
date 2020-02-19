@@ -1,5 +1,7 @@
 # Connected React Router Akita
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nitor-infotech-oss/connected-react-router-akita.svg)](https://greenkeeper.io/)
+
 ### A React Router v4/v5 binding with Akita.
 
 This is a mono repo which has 3 packages.
